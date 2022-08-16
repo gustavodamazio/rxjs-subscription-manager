@@ -1,0 +1,7 @@
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierrc.json
+src
+tsconfig.json
+DETAILS.md

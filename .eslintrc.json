@@ -1,0 +1,40 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "google",
+        "prettier",
+        "plugin:jest/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": ["tsconfig.json", "tsconfig.dev.json"],
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["/lib/**/*"],
+    "plugins": ["@typescript-eslint", "import", "prettier", "jest"],
+    "rules": {
+        "object-curly-spacing": "off",
+        "camelcase": "off",
+        "@typescript-eslint/camelcase": "off",
+        "prettier/prettier": "error",
+        "space-before-function-paren": "off",
+        "no-use-before-define": "off",
+        "quotes": ["error", "single"],
+        "max-len": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-unused-vars": "off",
+        "arrow-parens": "off",
+        "indent": "off",
+        "new-cap": "off",
+        "require-jsdoc": "off"
+    }
+}
