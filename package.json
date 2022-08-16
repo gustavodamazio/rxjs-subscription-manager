@@ -23,10 +23,13 @@
     "author": "gustavo_damazio",
     "license": "ISC",
     "dependencies": {
-        "rxjs": "^7",
         "uuid": "^8.3.2"
     },
+    "peerDependencies": {
+        "rxjs": "^7"
+    },
     "devDependencies": {
+        "rxjs": "^7",
         "@types/jest": "^28.1.2",
         "@types/uuid": "^8.3.4",
         "@typescript-eslint/eslint-plugin": "^5.28.0",
