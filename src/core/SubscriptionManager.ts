@@ -29,7 +29,7 @@ export class SubscriptionManagerRef<SMR_RefKeyString> {
 }
 
 export class SubscriptionManager<RefKeyString> {
-    public readonly instanceId = uuidv4();
+    public readonly instanceId: string;
     private readonly activeSubs = new BehaviorSubject<
         Map<RefKeyString, SubscriptionManagerRef<RefKeyString>[]>
     >(new Map());
@@ -37,7 +37,8 @@ export class SubscriptionManager<RefKeyString> {
         Map<RefKeyString, SubscriptionManagerRef<RefKeyString>[]>
     >(new Map());
 
-    constructor() {
+    constructor({ prefixId }: { prefixId?: string } = {}) {
+        this.instanceId = prefixId + uuidv4();
         SubscriptionManagerRootContext.addInstance(this);
     }
 
