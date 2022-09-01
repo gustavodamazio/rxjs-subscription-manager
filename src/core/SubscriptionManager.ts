@@ -100,6 +100,13 @@ export class SubscriptionManager<RefKeyString> {
         return this.activeSubs.getValue().has(ref);
     }
 
+    public get activeSubsValue(): Map<
+        RefKeyString,
+        SubscriptionManagerRef<RefKeyString>[]
+    > {
+        return this.activeSubs.getValue();
+    }
+
     public get activeSubs$(): Observable<
         Map<RefKeyString, SubscriptionManagerRef<RefKeyString>[]>
     > {
@@ -110,6 +117,13 @@ export class SubscriptionManager<RefKeyString> {
         Map<RefKeyString, SubscriptionManagerRef<RefKeyString>[]>
     > {
         return this.closedSubs.asObservable();
+    }
+
+    public get closedSubsValue(): Map<
+        RefKeyString,
+        SubscriptionManagerRef<RefKeyString>[]
+    > {
+        return this.closedSubs.getValue();
     }
 
     public get allSubs$(): Observable<{
