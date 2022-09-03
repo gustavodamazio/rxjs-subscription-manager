@@ -76,6 +76,7 @@ export class SubscriptionManager<RefKeyString> {
             closedSubsMap.set(refKeyString, closedSubs.concat(activeSubs));
         }
         this.closedSubs.next(closedSubsMap);
+        this.activeSubs.next(activeSubsMap);
     }
 
     public closeAll(): void {
