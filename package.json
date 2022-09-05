@@ -1,6 +1,6 @@
 {
     "name": "rxjs-sub-manager",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "rxjs subscription manager",
     "licenses": [
         {
