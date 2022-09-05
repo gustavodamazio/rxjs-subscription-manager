@@ -2,6 +2,10 @@
 .eslintignore
 .eslintrc.json
 .prettierrc.json
+.prettierignore
+jestconfig.json
 src
 tsconfig.json
+tsconfig.dev.json
 DETAILS.md
+/docs
