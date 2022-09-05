@@ -2,6 +2,11 @@
     "name": "rxjs-sub-manager",
     "version": "1.0.12",
     "description": "rxjs subscription manager",
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/gustavodamazio/rxjs-subscription-manager"

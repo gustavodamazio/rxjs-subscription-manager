@@ -51,12 +51,12 @@ export class ParentComponent implments OnInit {
     private readonly observable1$ = interval(1000);
 
     ngOnInit() {
-        this.subscriptionManager.add(
-            'observable1',
-            this.observable1$.subscribe((value) => {
+        this.subscriptionManager.add({
+            ref: 'observable1',
+            sub: this.observable1$.subscribe((value) => {
                 console.log(value);
-            })
-        );
+            }),
+        });
     }
 }
 ```
