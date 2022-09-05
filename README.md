@@ -13,7 +13,7 @@ This lib aims to:
 -   [Demo site](https://rxjs-sub-manager.web.app/parent-child)
 -   [Demo site source Code](https://github.com/gustavodamazio/rxjs-sub-manager-site.git)
 
-<img src="docs/img/sub-manager-demo-site-screenshoot.png" alt="sub-manager-demo-site-screenshoot" width="400"/>
+<img src="https://raw.githubusercontent.com/gustavodamazio/rxjs-subscription-manager/main/docs/img/sub-manager-demo-site-screenshoot.png" alt="sub-manager-demo-site-screenshoot" width="400"/>
 
 ## 📦 Installation
 
