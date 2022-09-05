@@ -1,17 +1,12 @@
 {
     "name": "rxjs-sub-manager",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "rxjs subscription manager",
     "repository": {
         "type": "git",
         "url": "https://github.com/gustavodamazio/rxjs-subscription-manager"
     },
-    "keywords": [
-        "rxjs",
-        "subscription",
-        "manager",
-        "angular"
-    ],
+    "keywords": [],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -29,7 +24,6 @@
         "version": "npm run format && git add -A src",
         "postversion": "git push && git push --tags"
     },
-    "keywords": [],
     "author": "gustavo_damazio",
     "license": "ISC",
     "dependencies": {
